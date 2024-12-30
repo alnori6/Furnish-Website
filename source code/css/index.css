@@ -1,0 +1,143 @@
+main {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+#home-intro {
+	min-height: 500px;
+	position: relative;
+}
+#home-intro > img {
+	position: absolute;
+	top: 40%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+}
+#home-intro > h1 {
+	width: 410px;
+	font-size: 48px;
+	font-weight: 700;
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	color: #faeab1;
+
+	transform: translate(-50%, -50%);
+}
+
+#best-sellers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 80px;
+}
+
+#section-header {
+	text-align: center;
+	font-size: 48px;
+	color: #faeab1;
+}
+
+.best-seller {
+	width: 400px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	background: #faeab1;
+}
+
+.best-seller > img {
+	width: 100%;
+	height: 60%;
+	border-radius: 20px 20px 0 0;
+}
+
+.best-seller > .details {
+	width: 100%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.best-seller > .details > p {
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+}
+
+aside {
+	flex: auto;
+	height: inherit;
+	margin-top: 20px;
+}
+
+aside h2 {
+	color: #faeab1;
+	text-align: center;
+}
+aside input {
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid #9b9b9b;
+	outline: 0;
+	padding: 7px 0;
+	background: transparent;
+}
+
+aside button {
+	width: 100%;
+	height: 36px;
+	border-radius: 20px;
+	margin-top: 10px;
+	background-color: transparent;
+	border: solid 1px #fae391;
+	color: black;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+aside button:hover {
+	background-color: #fae391;
+	transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		flex-direction: column;
+	}
+	#home-intro {
+		position: static;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 80px;
+	}
+	#home-intro > img {
+		position: static;
+		transform: translate(0, 0);
+	}
+	#home-intro > h1 {
+		width: 90%;
+		position: static;
+		font-size: 32px;
+		text-align: center;
+		transform: translate(0, 0);
+	}
+	#section-header {
+		font-size: 32px;
+	}
+	.best-seller {
+		width: 300px;
+		height: 400px;
+	}
+	.best-seller > .details > p {
+		font-size: 14px;
+	}
+}

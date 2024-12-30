@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furniture system</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!-- 
+        every page consists of 'header', 'main', 'footer'
+        each of them has it own styles separated in a directed css file  
+        'header' & 'footer' doesn't change between the pages
+        only the content of 'main' changes between the pages
+     -->
+    <!-- 
+        header -> nav -> ul -> li -> a
+        this header is shared among all 4 files
+        the styles for the header are separated in 'nav.css'
+        one of the 'a' tags has an 'activated' data attribute in each html file 
+        that indicate what is the current page and change the styles according to it
+     -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" activate>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact us
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <!-- 
+            an introduction section with an image and a welcome statement 
+            -->
+            <section id="home-intro">
+                <img src="../assets/table-bg.png" alt="table">
+                <h1>Welcome to our furniture store</h1>
+            </section>
+
+            <!-- 
+            this section displays the best 3 sold items in our store
+            their names, price, and availability 
+            -->
+            <h1 id="section-header">Best Sellers</h1>
+            <section id="best-sellers">
+                <!-- 
+                every division consists of an image and the product's details  
+                -->
+                <div class="best-seller">
+                    <img src="../assets/table1.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: centre table</p>
+                        <p>Price: 120.50$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+
+                <div class="best-seller">
+                    <img src="../assets/table2.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: Tuohy table</p>
+                        <p>Price: 250.50$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+
+                <div class="best-seller">
+                    <img src="../assets/table3.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: Marsh table</p>
+                        <p>Price: 140.00$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+
+                <div class="best-seller">
+                    <img src="../assets/table2.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: Tuohy table</p>
+                        <p>Price: 250.50$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 
+            an aside that display a form to subscribe to the newsletter     
+         -->
+        <aside>
+            <h2>DON'T FORGET TO SUBSCRIBE TO OUR NEWSLETTER</h2>
+            <input type="email" placeholder="Subscribe Now!"> <br>
+            <button>
+                SUBSCRIBE
+            </button>
+        </aside>
+    </main>
+
+    <!-- 
+        'footer' in all pages includes our names and copy rights
+     -->
+    <footer>
+        <p>Noora Amer | Wafa Alsbeni | Roya Binzager</p>
+        <p>All rights reserved</p>
+        <p>&copy; 2023 UJ</p>
+    </footer>
+</body>
+
+</html>

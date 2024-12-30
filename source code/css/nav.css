@@ -1,0 +1,41 @@
+header {
+	width: 100vw;
+	height: 100px;
+}
+
+header > nav {
+	height: inherit;
+	display: flex;
+	justify-content: center;
+}
+nav > ul {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+
+ul > li > a {
+	color: #82dbff;
+
+	text-decoration: none;
+	font-size: 20px;
+}
+ul > li > a:hover {
+	color: #b1c0fa;
+}
+
+ul > li > a[activate] {
+	color: #b1c0fa;
+}
+
+@media screen and (max-width: 768px) {
+	nav > ul {
+		justify-content: space-between;
+	}
+
+	ul > li > a {
+		font-size: 12px;
+	}
+}

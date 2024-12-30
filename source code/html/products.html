@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furniture system | Products</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact us
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html" activate>
+                        Products
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- 
+        'main' element consists of 2 sections, 
+        a form to add a new product,
+        a products list to display all products
+     -->
+    <main>
+        <!-- 
+            this section is a form section to add a new product 
+            section -> form -> label -> input
+            their are multiple labels and input for each required field
+         -->
+        <section>
+            <h1 id="form-title">Add a Product</h1>
+            <form action="#" method="post">
+                <label>
+                    Product Name: <br>
+                    <input type="text">
+                </label>
+
+                <label>
+                    Inventory Stock Count: <br>
+                    <input type="number">
+                </label>
+
+                <label>
+                    Number of Products Sold: <br>
+                    <input type="number">
+                </label>
+
+                <label>
+                    Product Image: <br>
+                    <input type="file" accept="image/png, image/jpeg">
+                </label>
+
+                <button>Add Product</button>
+            </form>
+        </section>
+
+        <!-- 
+            this section is for displaying all products and it's information
+            the structure of each division is the same as 
+            the best seller division in index.html
+        -->
+        <section id="products">
+            <h2 class="title">All Products</h2>
+
+            <div id="products-info">
+                <div class="product">
+                    <img src="../assets/table1.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: centre table</p>
+                        <p>Price: 120.50$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../assets/table2.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: Tuohy table</p>
+                        <p>Price: 250.50$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../assets/table3.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: Marsh table</p>
+                        <p>Price: 140.00$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../assets/table2.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: Tuohy table</p>
+                        <p>Price: 250.50$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../assets/table3.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: Marsh table</p>
+                        <p>Price: 140.00$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../assets/table1.jpg" alt="table">
+                    <div class="details">
+                        <p>Name: centre table</p>
+                        <p>Price: 120.50$</p>
+                        <p>Availability: Available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Noora Amer | Wafa Alsbeni | Roya Binzager</p>
+        <p>All rights reserved</p>
+        <p>&copy; 2023 UJ</p>
+    </footer>
+</body>
+
+</html>

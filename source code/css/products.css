@@ -1,0 +1,154 @@
+section:not(:first-child) {
+	margin-top: 100px;
+}
+
+#form-title {
+	text-align: center;
+	font-size: 48px;
+	color: #faeab1;
+}
+form {
+	width: 60%;
+	min-height: 400px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	background: #faeab1;
+	border-radius: 20px;
+	padding: 20px 100px;
+}
+
+form > label {
+	width: 300px;
+	margin: 15px 0;
+}
+
+form > label > input {
+	width: inherit;
+	border: 0;
+	border-bottom: 2px solid #9b9b9b;
+	outline: 0;
+	padding: 7px 0;
+	background: transparent;
+}
+
+button {
+	width: 200px;
+	height: 36px;
+	border-radius: 20px;
+	background-color: transparent;
+	border: solid 1px white;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+	background-color: #fae391;
+	transition: all 0.2s ease-in-out;
+}
+
+#products > h2 {
+	text-align: center;
+	font-size: 48px;
+	color: #faeab1;
+}
+
+#products-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 80px;
+}
+
+.product {
+	width: 400px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	background: #faeab1;
+}
+
+.product > img {
+	width: 100%;
+	height: 60%;
+	border-radius: 20px 20px 0 0;
+}
+
+.product > .details {
+	width: 100%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.product > .details > p {
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+}
+
+table {
+	border-collapse: collapse;
+	width: 40vw;
+	margin: auto;
+	margin-top: 80px;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table caption {
+	font-size: 48px;
+	color: #faeab1;
+}
+
+table thead tr {
+	background-color: #faeab1;
+	color: #ffffff;
+	text-align: left;
+}
+
+table th,
+table td {
+	padding: 12px 15px;
+}
+
+table tbody tr {
+	border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+	border-bottom: 2px solid #faeab1;
+}
+
+@media screen and (max-width: 768px) {
+	form {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+	}
+	form > label {
+		width: 100%;
+	}
+	.product {
+		width: 300px;
+		height: 400px;
+	}
+	.product > .details > p {
+		font-size: 14px;
+	}
+}
